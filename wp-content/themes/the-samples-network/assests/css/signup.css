@@ -1,0 +1,132 @@
+.sec-signin {
+  background-color: var(--green-bg);
+  padding-inline: 160px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.sip-main {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+}
+
+.sip-left {
+  background-color: white;
+  width: 440px;
+  padding: 48px;
+  box-shadow: 29.35px 24.95px 40.71px 0px #3366ff0d;
+  border-radius: 16px;
+}
+
+.sip-left h2 {
+  color: var(--green-text);
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24.2px;
+  margin: 0;
+}
+
+.signup-form .form-group {
+  margin-bottom: 16px;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.signup-form input {
+  padding: 10px 15px;
+  width: 370px;
+  font-size: 16px;
+  border: 2px solid #b8b6c7;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #b8b6c7;
+}
+
+.signup-form .consent {
+  display: flex;
+  align-items: flex-start;
+}
+
+.signup-form .consent input {
+  margin-right: 10px;
+  margin-top: 5px;
+  width: auto;
+}
+.signup-form label {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.1px;
+}
+.signup-form .btn {
+  background-color: var(--green-text);
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+.signup-form .btn:hover {
+  background-color: #7000e0;
+}
+.consent p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-bottom: 16px;
+}
+.Consent span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+.sip-right img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+.sip-btn .btn {
+  padding-block: 6px;
+  padding-inline: 50px;
+  justify-content: center;
+}
+.consent a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .sip-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sip-left {
+    width: 220px;
+    padding: 20px;
+  }
+  .signup-form input {
+    width: auto;
+  }
+  .sip-btn .btn {
+    padding-inline: 25px;
+  }
+  .sec-signin {
+    padding: 0;
+    padding-block: 40px;
+  }
+}

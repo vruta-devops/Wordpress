@@ -1,0 +1,66 @@
+.footer-main {
+  background-color: var(--black-light);
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+footer li {
+  font-family: "Inter";
+}
+footer ul li {
+  font-family: "Inter";
+}
+.right-lists {
+  display: flex;
+  align-items: center;
+  gap: 84px;
+  margin: 0;
+  margin-block: 0;
+}
+.right-list-text a {
+  color: var(--green-text);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.right-list-text a:hover {
+  text-decoration: underline;
+  color: var(--green-text);
+}
+.footer-details-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.right-side-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.copy-right {
+  padding-top: 12px;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.left-side-footer img {
+  width: 180px;
+  height: 44px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-details-main {
+    flex-direction: column-reverse;
+  }
+  .right-lists {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+  .right-side-footer {
+    flex-direction: row;
+    gap: 40px;
+  }
+}

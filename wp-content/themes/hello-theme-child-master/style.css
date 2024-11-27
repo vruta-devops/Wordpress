@@ -1,0 +1,463 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+/* section two */
+.Weekly-Roundup {
+  background-color: var(--green-bg);
+}
+.section-roundup {
+  width: 912px;
+  background-color: white;
+  border-radius: 16px;
+  margin: auto;
+  margin-bottom: 40px;
+  display: grid; /* Ensure grid display is set */
+  grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+  gap: 32px; /* Adjust the gap between the columns as needed */
+  align-items: center;
+}
+.rounded-header {
+  font-size: 32px;
+  color: var(--heading);
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+.rounded-text {
+  color: var(--black-light);
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+.rounded-text-other {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black-light);
+  padding-bottom: 12px;
+}
+.roundup-left {
+  position: relative;
+}
+.weekly-roundup {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: var(--gray-para);
+  background-color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-nobg span {
+  color:#26AE58;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.btn-nobg img {
+  width: 20px;
+  height: 19px;
+}
+
+.roundup-right {
+  padding-block: 60px;
+  padding-right: 32px;
+}
+.roundup-left img {
+  height: 438px;
+  border-top-left-radius: 16px; /* Ensure image has rounded top-left */
+  border-bottom-left-radius: 16px; /* Ensure image has rounded bottom-left */
+}
+.round-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 270px;
+}
+.roundup-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 912px;
+  margin: auto;
+}
+.rounded-left-two img {
+  border-top-left-radius: 16px; /* Ensure image has rounded top-left */
+  border-top-right-radius: 16px; /* Ensure image has rounded bottom-left */
+  border-bottom-left-radius: 0px; /* Ensure image has rounded bottom-left */
+  height: 200px;
+}
+
+.roundup-right-two {
+  padding-top: 0px;
+  padding-inline: 16px;
+  padding-bottom: 16px;
+}
+.roundheader-two {
+  font-size: 20px;
+  line-height: 20px;
+}
+.text-other-two {
+  font-size: 13px;
+  line-height: 20px;
+  display: block;
+}
+.text-two {
+  font-size: 12px;
+  line-height: 18px;
+}
+.artical-latest {
+  display: none;
+  color: var(--black-light);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.tc-one {
+  height: 450px;
+}
+@media screen and (max-width: 900px) {
+  .roundup-main {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+  .section-roundup {
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    width: 400px;
+  }
+
+  .roundup-right {
+    padding-inline: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-hero {
+    padding-block: 24px;
+  }
+  .rounded-left-two {
+    width: 100%;
+  }
+  .rounded-right-two {
+    width: 100%;
+  }
+  .artical-latest {
+    display: block;
+  }
+  .text-other-two {
+    display: none;
+  }
+  .roundup-main {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+  .section-roundup {
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    width: auto;
+    gap: 0px;
+    margin-bottom: 16px !important;
+  }
+  .roundup-right {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .section-hero-main {
+    gap: 0px;
+  }
+  .hero-text {
+    display: none;
+  }
+  .Weekly-Roundup {
+    padding-block: 16px;
+  }
+
+  .hero-text-two {
+    display: block;
+    font-size: 28px;
+    line-height: 23px;
+    padding-bottom: 16px;
+  }
+  .hero-para {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .btn span {
+    color: white;
+    font-size: 18px;
+
+    line-height: 20.21px;
+    font-weight: 600;
+  }
+  .btn img {
+    width: 20px;
+    height: 26px;
+  }
+  .roundup-left img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    height: auto;
+  }
+  .rounded-header {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 4px;
+  }
+  .rounded-text-other {
+    padding-bottom: 4px;
+  }
+  .rounded-text {
+    padding-bottom: 4px;
+  }
+  .rounded-left-two img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    height: 150px;
+  }
+  .weekly-roundup {
+    font-size: 10px;
+  }
+  .round-col {
+    flex-direction: row;
+
+    margin-bottom: 0px !important;
+  }
+}
+
+.sp-img img {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  max-width: 160px;
+  height: 170px;
+}
+
+.sp-img {
+  width: auto;
+  position: relative;
+}
+
+.sp-offer {
+  padding: 0; /* Combined padding properties for clarity */
+  padding-right: 16px;
+}
+
+.sp-right-content {
+  padding: 0; /* Combined padding properties for clarity */
+  padding-bottom: 0;
+}
+
+.sp-rounup {
+  position: absolute; /* Ensure the positioning works as intended */
+  bottom: 8px;
+  left: 14px;
+  top: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .sp-img img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0; /* Removed 'px' for consistency */
+    width: 300px; /* Consider using max-width for responsiveness */
+    height: 170px;
+  }
+
+  .sp-offer {
+    padding-right: 0; /* Removed redundant properties */
+  }
+
+  .sp-right-content {
+    padding: 16px 0 16px 16px; /* Combined padding properties for clarity */
+  }
+
+  .sp-content {
+    gap: 0; /* Removed 'px' for consistency */
+  }
+}
+//coupan page css
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cp-sec {
+  padding-block: 40px;
+  background-color: var(--green-bg);
+}
+.cp-header {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 52px;
+  margin: 0px;
+  padding-bottom: 32px;
+  display: block;
+}
+.cp-para {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  padding-bottom: 32px;
+}
+.cp-main {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+.cp-content-offers {
+  background-color: white;
+  border: 0.85px solid #e5f4f2;
+  border-radius: 17.07px;
+  padding-block: 12px;
+  padding-inline: 16px;
+  margin-bottom: 30px;
+}
+.cp-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cp-btn-main a span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.21px;
+  padding-right: 0px;
+}
+.cp-btn-main .btn {
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding: 14px;
+  width: 100px;
+}
+.cp-content-left {
+  width: 80%;
+}
+.cp-content-header {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  padding-bottom: 8px;
+  color: var(--black-light);
+}
+.cp-content-link a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  color: #003dff;
+  text-decoration: underline;
+  padding-bottom: 8px;
+}
+.cp-content-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+}
+.cp-left {
+  position: sticky;
+  top: 100px;
+}
+.cp-headder-hidden {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .cp-header {
+    display: none;
+  }
+  .cp-para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px;
+  }
+  .cp-headder-hidden {
+    display: block;
+
+    font-size: 28px;
+
+    line-height: 30px;
+  }
+
+  .cp-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+  }
+  .pagination {
+    display: none;
+  }
+  .cp-main {
+    display: block;
+    gap: 0px;
+  }
+  .cp-content {
+    flex-direction: column;
+  }
+  .cp-content-left {
+    width: 100%;
+  }
+  .cp-btn-main .btn {
+    width: 200px;
+    justify-content: center;
+  }
+  .cp-content-offers {
+    margin-bottom: 36px;
+  }
+  .cp-content-header {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+  .cp-content-link a {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+  .cp-content-para {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+}
+
+.everest-forms-submit-button {
+    background-color: #7495FF!important;
+    color: white!important;
+    font-size: 18px!important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+}
+.everest-forms-submit-button:hover {
+  background-color: #7000e0!important;
+}
+
+.everest-forms .term-cond label {
+    display: block;
+    line-height: 1.7;
+    margin: 0 0 10px 0;
+    color: #494d50;
+    font-size: 10px;
+	font-family: Inter;
+	font-weight: 700;
+	line-height: 12.1px;
+	text-align: left;
+}

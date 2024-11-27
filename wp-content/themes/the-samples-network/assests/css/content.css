@@ -1,0 +1,238 @@
+.content-main {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.content-main img {
+  height: 646.57px;
+  display: block;
+  width: 100%;
+}
+.free-sample-one {
+  background-color: #e3eaffb2;
+  border-radius: 6px;
+  padding: 40px;
+  margin-bottom: 100px;
+}
+
+.left-content {
+  margin-top: -150px;
+  position: relative;
+  width: 800px;
+}
+.content-two-main {
+  padding-top: 0px;
+  padding-bottom: 80px;
+  background-color: var(--green-bg);
+}
+.roundup-content {
+  background-color: var(--primary);
+  color: var(--black-light);
+  font-weight: 500;
+  display: inline-block;
+  position: unset;
+  margin-bottom: 16px;
+}
+.header-content {
+  color: var(--black-light);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 50px;
+  padding-bottom: 16px;
+  margin: 0;
+  display: block;
+}
+.hidden-content {
+  display: none;
+}
+.text-des-content {
+  color: var(--black-light);
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  padding-top: 22px;
+}
+
+.table-content-main {
+  background-color: #ffffffcc;
+  padding: 32px;
+  margin: 40px;
+  border-radius: 8px;
+}
+.tc-header {
+  margin: 0%;
+  font-size: 32px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: var(--black-light);
+}
+.table-content-main img {
+  padding-bottom: 24px;
+}
+.tc-span {
+  font-weight: 400 !important;
+}
+.tc-para {
+  color: var(--gray-para);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.tc-para-descrption {
+  background-color: var(--primary);
+  padding: 9px;
+  color: var(--black-light);
+  display: inline-block;
+}
+.tc-para-descrption span {
+  font-weight: 600;
+}
+.tc-table-handle {
+  margin: 0;
+  padding-top: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.right-content {
+  width: 326px;
+  height: 430px;
+  position: sticky;
+  top: 20px;
+
+  text-align: start;
+}
+.tc-table-style a {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20.21px;
+  text-align: left;
+  color: var(--blue-new);
+}
+.tc-table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 0px;
+}
+.tc-main-section {
+  display: flex;
+  gap: 104px;
+}
+.tc-two {
+  margin-top: 2px;
+}
+.tc-three {
+  margin-top: 2px;
+}
+.roundheader-two {
+  margin: 0;
+}
+.tc-content-re {
+  border-top: 2px solid var(--green-text);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  padding-block: 32px;
+}
+.section-weekly-tc {
+  background-color: var(--green-bg);
+}
+.hidden-img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .content-main img {
+    display: none;
+    height: 0;
+  }
+  .content-two-main {
+    padding-bottom: 0px;
+  }
+  .left-content {
+    margin-top: 0px;
+  }
+  .right-content {
+    display: none;
+  }
+  .free-sample-one {
+    padding: 0px;
+    padding-block: 24px;
+    margin-bottom: 0;
+  }
+  .table-content-main {
+    padding: 15px;
+    margin: 0px;
+    margin-bottom: 32px;
+  }
+  .roundup-content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .header-content {
+    display: none;
+  }
+  .hidden-content {
+    display: block;
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 16px;
+  }
+
+  .text-des-content {
+    font-size: 16px;
+    padding-top: 0px;
+    line-height: 18px;
+    padding-bottom: 16px;
+  }
+  .hidden-img {
+    display: block;
+  }
+  .tc-header {
+    font-size: 20px;
+    padding-block: 0;
+    padding-bottom: 24px;
+    line-height: 27.32px;
+    text-align: left;
+  }
+  .tc-para {
+    font-size: 16px;
+
+    line-height: 16px;
+  }
+  .tc-para-descrption {
+    font-size: 16px;
+
+    line-height: 18px;
+  }
+  .tc-two {
+    margin-top: 2px;
+    gap: 0px;
+  }
+  .tc-three {
+    margin-top: 2px;
+    gap: 0px;
+  }
+  .section-weekly-tc {
+    padding-top: 0px;
+    padding-bottom: 16px;
+  }
+  .tc-content-re {
+    padding-block: 16px;
+  }
+  .roundup-main {
+    gap: 16px;
+  }
+  .section-roundup {
+    margin-bottom: 0px;
+  }
+}

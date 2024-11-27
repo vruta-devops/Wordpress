@@ -1,0 +1,16 @@
+/* layout.css */
+
+/* Importing all the necessary CSS files */
+@import url("./font-family.css");
+
+@import url("./footer.css");
+@import url("./header.css");
+@import url("./home.css");
+@import url("./main.css");
+@import url("./content.css");
+@import url("./legal.css");
+@import url("./coupons.css");
+@import url("./sample.css");
+@import url("./signup.css");
+
+/* Add any additional global styles here if needed */

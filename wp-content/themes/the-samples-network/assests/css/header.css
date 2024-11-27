@@ -1,0 +1,251 @@
+.nav {
+  width: 100%;
+  background-color: var(--black-light);
+  display: flex;
+  align-items: center;
+  padding-block: 22px;
+  justify-content: space-between;
+}
+
+.nav-header {
+  width: 290px;
+}
+header {
+  background-color: var(--black-light);
+}
+.nav > .nav-header > .nav-title > img {
+  width: 290px;
+  height: 69.79px;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 15em; /* You might want to adjust this based on your design */
+}
+
+.nav-ul > ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-ul > ul > li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.nav-ul > ul > li a {
+  text-decoration: none;
+  color: #a9f9c6;
+  cursor: pointer;
+  position: relative; /* For the underline effect */
+}
+
+.nav-ul > ul > li a::after {
+  content: ""; /* Create an underline effect */
+  display: block;
+  height: 2px; /* Adjust thickness */
+  width: 0; /* Start width */
+  background: currentColor; /* Use the same color as text */
+  position: absolute; /* Position it absolutely */
+  bottom: -3px; /* Adjust vertical position */
+  left: 0; /* Align to left */
+  transition: width 0.3s ease; /* Animation on hover */
+}
+
+.nav-ul > ul > li a:hover::after {
+  width: 100%; /* Expand to full width on hover */
+}
+
+.nav-ul > div img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.nav > #nav-check {
+  display: none; /* Hidden checkbox for mobile toggle */
+}
+.search-ic {
+  display: none;
+}
+.search-container {
+  position: relative; /* Position relative for absolute positioning of the input */
+}
+
+.hidden-search {
+  display: inline-block; /* Keeps the icon and input inline */
+}
+
+.search-icon {
+  cursor: pointer; /* Change cursor on hover */
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+.search-input {
+  display: block; /* Keep input block to apply transitions */
+  position: absolute; /* Position input relative to the container */
+  right: -15px; /* Keep it anchored to the right */
+  top: -5px; /* Adjust as needed */
+  width: 0; /* Start with no width */
+  padding: 10px 10px; /* Padding for the input */
+  border-radius: 100px; /* Rounded corners */
+  transition: width 0.3s ease, opacity 0.3s ease, padding 0.3s ease; /* Smooth transition */
+  opacity: 0; /* Start hidden */
+  background-color: #ffffffe5;
+  overflow: hidden; /* Prevents overflow during the transition */
+  border: none; /* No border for cleaner look */
+  padding-right: 60px; /* Space for the icon */
+  font-size: 16px;
+  color: black;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: #4e5772;
+}
+
+.hidden-search:hover .search-input {
+  width: 100px; /* Expand to desired width of 100px */
+  opacity: 1; /* Show input */
+  padding-left: 10px; /* Add some padding on the left for aesthetics */
+}
+
+.hidden-search:hover .search-icon {
+  position: relative;
+  z-index: 10;
+}
+.search-icon-small {
+  display: none;
+}
+.search-container-li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Adjust as per your design */
+  display: none;
+}
+
+.search-input-li {
+  display: block;
+  padding: 10px 10px;
+  padding-right: 40px;
+  border-radius: 100px;
+  background-color: #ffffffe5;
+  border: none;
+  font-size: 16px;
+  color: black;
+  width: 210px;
+}
+
+.search-icon-li {
+  position: absolute;
+  right: 15px; /* Adjust this value to align the icon inside the input */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  top: 10px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 900px) {
+  .nav > .nav-header > .nav-title > img {
+    width: 200px;
+    height: 60px;
+  }
+  .search-ic {
+    display: block;
+  }
+  .search-container-li {
+    display: block;
+  }
+  .search-icon-small {
+    width: 30px;
+    display: block;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .nav > .nav-btn {
+    display: flex;
+
+    padding-top: 0.2rem;
+    align-items: center;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 13px;
+    margin-top: 20px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #a9f9c6;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out; /* Smooth transition for mobile menu icon */
+  }
+
+  .nav-ul {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-light);
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in; /* Transition for height change */
+    z-index: 10;
+  }
+
+  .nav-ul > ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0px;
+  }
+  .hidden-search {
+    display: none;
+  }
+  .nav-ul > ul > li {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem; /* Space between items */
+  }
+
+  .nav > #nav-check:checked ~ .nav-ul {
+    height: calc(100vh - 50px); /* Full height for dropdown */
+  }
+
+  .nav-ul > div {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-ul {
+    gap: 40px; /* Space between divs in mobile */
+  }
+
+  /* Menu button transformations when checked */
+  #nav-check:checked ~ .nav-btn > label > span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 4px;
+  }
+
+  #nav-check:checked ~ .nav-btn > label > span:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+  }
+
+  #nav-check:checked ~ .nav-btn > label > span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -10px;
+  }
+}

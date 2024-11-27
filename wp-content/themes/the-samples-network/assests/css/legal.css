@@ -1,0 +1,34 @@
+.lg-text {
+  padding-bottom: 30px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: left;
+}
+.lg-sec {
+  background-color: #e3eaffb2;
+}
+.lg-main {
+  max-width: 900px;
+  margin: auto;
+}
+.lg-header {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: left;
+  padding-bottom: 30px;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .lg-header {
+    font-size: 28px;
+    line-height: 23px;
+  }
+  .lg-text {
+    font-size: 16px;
+
+    line-height: 18px;
+  }
+}
